@@ -1,0 +1,105 @@
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+  
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+  
+.app-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: #007bff; 
+}
+  
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #f67c01; 
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+  
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+button:disabled {
+    background-color: #ccc;
+}
+  
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+  
+.card {
+    background-color: #064e9b; 
+    border: 2px solid #003670; 
+    color: white; 
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+  
+.card:hover {
+    transform: scale(1.05); 
+}
+  
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+  
+.pagination-container button {
+    padding: 10px 15px;
+    background-color: #f67c01; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+  
+.pagination-container button:hover {
+    background-color: #ff8a33; 
+}
+  
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+.title-trips {
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #f67c01;
+}
