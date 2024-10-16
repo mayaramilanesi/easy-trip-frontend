@@ -1,10 +1,6 @@
 import axios from "axios";
 
-let API_URL = process.env.VITE_API_URL;
-
-if (API_URL === "") {
-  API_URL = import.meta.env.VITE_API_URL;
-}
+let API_URL = import.meta.env.VITE_API_URL;
 
 console.log("LOG - API_URL", API_URL);
 
